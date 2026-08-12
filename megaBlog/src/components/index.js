@@ -8,5 +8,18 @@ import Select from "./Select";
 import Login from "./Login";
 import Signup from "./Signup";
 import PostCard from "./PostCard";
+import Protected from "./AuthLayout";
 
-export { Header, Footer, LogoutBtn, Logo, Container, Input, Select, Login, Signup, PostCard };
+export {
+  Header,
+  Footer,
+  LogoutBtn,
+  Logo,
+  Container,
+  Input,
+  Select,
+  Login,
+  Signup,
+  PostCard,
+  Protected
+};
