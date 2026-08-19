@@ -6,7 +6,7 @@ import parse from "html-react-parser";
 import Button from "../components/Button";
 import Container from "../components/container/Container";
 
-import databaseService from "../../appwrite/database.service";
+import databaseService from "../appwrite/database.service.js";
 
 export default function Post() {
   const [post, setPost] = useState(null);

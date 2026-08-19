@@ -1,8 +1,10 @@
 import { useEffect, useState } from "react";
+import { useNavigate, useParams } from "react-router-dom";
+
 import Container from "../components/container/Container";
 import PostForm from "../components/post-form/PostForm";
-import { useNavigate, useParams } from "react-router-dom";
-import databaseService from "../../appwrite/database.service";
+
+import databaseService from "../appwrite/database.service.js";
 
 function EditPost() {
   const [post, setPosts] = useState(null);

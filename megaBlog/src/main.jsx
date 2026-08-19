@@ -6,11 +6,11 @@ import "./index.css";
 import store from "./store/store.js";
 
 import App from "./App.jsx";
-import Home from "./pages/Home.js";
-import Login from "./pages/Login.js";
-import AllPosts from "./pages/AllPosts.js";
+import Home from "./pages/Home.jsx";
+import Login from "./pages/Login.jsx";
+import AllPosts from "./pages/AllPosts";
 import AddPost from "./pages/AddPost.jsx";
-import EditPost from "./pages/EditPost.js";
+import EditPost from "./pages/EditPost.jsx";
 import Post from "./pages/Post.jsx";
 import Signup from "./pages/Signup.jsx";
 

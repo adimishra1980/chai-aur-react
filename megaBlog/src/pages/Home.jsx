@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
-import databaseService from "../../appwrite/database.service";
+
 import Container from "../components/container/Container.jsx";
 import PostCard from "../components/PostCard";
+
+import databaseService from "../appwrite/database.service.js";
 
 const Home = () => {
   const [posts, setPosts] = useState([]);
