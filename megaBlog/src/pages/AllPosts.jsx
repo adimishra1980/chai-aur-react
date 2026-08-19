@@ -1,20 +1,21 @@
 import { useState, useEffect } from "react";
-import { Container, PostCard } from "../index";
+import Container from "../components/container/Container";
+import PostCard from "../components/PostCard.jsx";
 import databaseService from "../../appwrite/database.service";
 
 function AllPosts() {
+  const [posts, setPosts] = useState([]);
 
-    const [posts, setPosts] = useState([])
-    
-    useEffect(() => {
-        databaseService.getPosts([])
-            .then((posts) => {
-                if(posts){
-                    setPosts(posts.documents)
-                }
-            })
-            .catch((err) => console.error(err))
-    }, [])
+  useEffect(() => {
+    databaseService
+      .getPosts([])
+      .then((posts) => {
+        if (posts) {
+          setPosts(posts.documents);
+        }
+      })
+      .catch((err) => console.error(err));
+  }, []);
 
   return (
     <div className="w-full py-8">

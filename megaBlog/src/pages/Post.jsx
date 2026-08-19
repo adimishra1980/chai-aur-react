@@ -1,8 +1,11 @@
-import  { useEffect, useState } from "react";
-import { Link, useNavigate, useParams } from "react-router-dom";
-import { Button, Container } from "../index";
-import parse from "html-react-parser";
+import { useEffect, useState } from "react";
 import { useSelector } from "react-redux";
+import { Link, useNavigate, useParams } from "react-router-dom";
+import parse from "html-react-parser";
+
+import Button from "../components/Button";
+import Container from "../components/container/Container";
+
 import databaseService from "../../appwrite/database.service";
 
 export default function Post() {
